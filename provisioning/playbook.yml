@@ -1,0 +1,8 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: yes
+  roles:
+    - clag
+  vars_files:
+    - roles/clag/vars/main.yml
