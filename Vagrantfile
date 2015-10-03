@@ -46,6 +46,16 @@ Vagrant.configure(2) do |config|
       ansible.playbook = "provisioning/playbook.yml"
     end
 
+    spine2.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
+    end
   end
 
 
