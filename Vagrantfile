@@ -18,13 +18,15 @@ Vagrant.configure(2) do |config|
       ansible.playbook = "provisioning/playbook.yml"
     end
     
-    iter = 2
-    
     spine1.vm.provider "virtualbox" do |v|
-      1.upto(9) do |spine1|
-        v.customize ["modifyvm", :id, "--nicpromisc" + iter.to_s, "allow-vms"]
-        iter += 1 
-      end
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
     end
 
   end
@@ -72,6 +74,17 @@ Vagrant.configure(2) do |config|
       ansible.playbook = "provisioning/playbook.yml"
     end
 
+    leaf1.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
+    end
+
   end
 
   config.vm.define "leaf2" do |leaf2|
@@ -85,6 +98,17 @@ Vagrant.configure(2) do |config|
   
     leaf2.vm.provision "ansible" do |ansible|
       ansible.playbook = "provisioning/playbook.yml"
+    end
+
+    leaf2.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
     end
 
   end
@@ -103,6 +127,17 @@ Vagrant.configure(2) do |config|
       ansible.playbook = "provisioning/playbook.yml"
     end
 
+    leaf3.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
+    end
+
   end
 
   config.vm.define "leaf4" do |leaf4|
@@ -116,6 +151,17 @@ Vagrant.configure(2) do |config|
   
     leaf4.vm.provision "ansible" do |ansible|
       ansible.playbook = "provisioning/playbook.yml"
+    end
+
+    leaf4.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
     end
 
   end
@@ -133,6 +179,17 @@ Vagrant.configure(2) do |config|
       ansible.playbook = "provisioning/playbook.yml"
     end
 
+    leaf5.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
+    end
+
   end
 
   config.vm.define "leaf6" do |leaf6|
@@ -146,6 +203,17 @@ Vagrant.configure(2) do |config|
   
     leaf6.vm.provision "ansible" do |ansible|
       ansible.playbook = "provisioning/playbook.yml"
+    end
+
+    leaf6.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc3", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc4", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc5", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc6", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc7", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc8", "allow-vms"]
+      v.customize ["modifyvm", :id, "--nicpromisc9", "allow-vms"]
     end
 
   end
