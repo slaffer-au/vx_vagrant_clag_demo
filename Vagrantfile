@@ -91,10 +91,10 @@ Vagrant.configure(2) do |config|
 	leaf2.vm.box = "cumulus-vx-2.5.3"
 
     leaf2.vm.hostname = "leaf2"
-    leaf2.vm.network "private_network", virtualbox__intnet: "l2s1", nicpromisc: "allow-vms"
-    leaf2.vm.network "private_network", virtualbox__intnet: "l2s2", nicpromisc: "allow-vms"
-    leaf2.vm.network "private_network", virtualbox__intnet: "peerlink_l12", nicpromisc: "allow-vms"
-    leaf2.vm.network "private_network", virtualbox__intnet: "peerlink_l21", nicpromisc: "allow-vms"
+    leaf2.vm.network "private_network", virtualbox__intnet: "l2s1"
+    leaf2.vm.network "private_network", virtualbox__intnet: "l2s2"
+    leaf2.vm.network "private_network", virtualbox__intnet: "peerlink_l12"
+    leaf2.vm.network "private_network", virtualbox__intnet: "peerlink_l21"
   
     leaf2.vm.provision "ansible" do |ansible|
       ansible.playbook = "provisioning/playbook.yml"
