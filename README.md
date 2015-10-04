@@ -3,13 +3,13 @@
 
 
 #### Prerequisites
-  * VirutalBox must be installed
+  * VirutalBox must be installed.
     * https://www.virtualbox.org/
-  * Vagrant must be installed
+  * Vagrant must be installed.
     * https://www.vagrantup.com/
-  * Ansible must be installed
+  * Ansible must be installed.
     * http://www.ansible.com/
-  * The Cumulus Linux module for Ansible must be installed
+  * The Cumulus Linux module for Ansible must be installed.
     * Once Ansible is installed, this is achieved with the command "ansible-galaxy install cumulus.CumulusLinux"
     
 
@@ -26,4 +26,9 @@
   * SVIs are currently configured on VLAN 10 on all switches. The Spine switches also have VRR configured between them.
   
 
+#### Instructions
+ 1) Install all the above prerequisites.
+ 2) Download or git-clone this repository.
+ 3) Enter the command "vagrant up". This will create and provision the Cumulus VX instances.
+ 4) Once completed, connect to the CLI of the VX instances with "vagrant ssh <hostname>"
 
