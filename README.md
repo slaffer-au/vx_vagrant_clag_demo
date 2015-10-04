@@ -29,6 +29,6 @@
 #### Instructions
   1. Install all the above prerequisites.
   2. Download or git-clone this repository.
-  3. Enter the command "vagrant up". This will create and provision the Cumulus VX instances.
+  3. Enter the command "vagrant up" in the directory where the files were placed. This will create and provision the Cumulus VX instances.
   4. Once completed, connect to the CLI of the VX instances with "vagrant ssh <hostname>"
 
