@@ -3,7 +3,7 @@
 
 
 #### Prerequisites
-  * VirutalBox must be installed.
+  * VirtualBox must be installed.
     * https://www.virtualbox.org/
   * Vagrant must be installed.
     * https://www.vagrantup.com/
