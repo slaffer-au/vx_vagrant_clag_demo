@@ -17,7 +17,7 @@
 ![Topology](https://github.com/slaffer-au/vx_vagrant_clag_demo/blob/master/Topology/Topology.jpg)
 
 
-##### Description
+#### Description
   * The eth0 interface is connected to a VirtualBox NAT network for internet connectivity. 
   * CLAGs are formed as pictured above, with CLAG IP keepalive and messaging communication performed using interface _peerlink.4094_.
   * No CLAG backup IP is configured. In a real-world deployment, it is recommended to do this through the OOB network.
