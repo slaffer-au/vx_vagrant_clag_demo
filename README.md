@@ -35,5 +35,5 @@
     ``` vagrant box add CumulusVX-2.5.3-4eb681f3df86c478.box --name cumulus-vx-2.5.3 ```
   2. Download or git-clone this repository.
   3. Enter the command "vagrant up" in the directory where the files were placed. This will create and provision the Cumulus VX instances.
-  4. Once completed, connect to the CLI of the VX instances with "vagrant ssh <hostname>"
+  4. Once completed, connect to the CLI of the VX instances with "vagrant ssh ```hostname```"
 
