@@ -29,8 +29,8 @@
   
 
 #### Instructions
-  1. Install all the above prerequisites.
-  2. Add the Vagrant Box file with the name "cumulus-vx-2.5.3"
+  1. Download and/or install all the above prerequisites.
+  2. Add the Cumulus VX Vagrant Box file with the name "cumulus-vx-2.5.3"
    * This is achived with the following command in the directory where the box file is placed: 
     ``` vagrant box add CumulusVX-2.5.3-4eb681f3df86c478.box --name cumulus-vx-2.5.3 ```
   2. Download or git-clone this repository.
